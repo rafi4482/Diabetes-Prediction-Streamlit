@@ -48,7 +48,7 @@ with st.form("input_form", clear_on_submit=False):
         age = st.number_input("Age", min_value=0, max_value=120, value=30, step=1, format="%d", key="age")
         bmi = st.number_input("BMI", min_value=10, max_value=95, value=27, step=1, format="%d", key="bmi")
         smoking_history = st.selectbox(
-            "Smoking History", ["never", "current", "former", "No Info", "not current", "ever"], key="smoking_history"
+            "Smoking History", ["never", "current", "former", "not current"], key="smoking_history"
         )
 
     with col3:
