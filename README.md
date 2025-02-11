@@ -1,42 +1,47 @@
-# 🩺 Diabetes Prediction App
+# 🚗 Vehicle Damage Detection App
 
-A **machine learning web app** built using **Streamlit** to predict the likelihood of diabetes based on user input. This app utilizes a **RandomForestClassifier** model trained on healthcare data to provide predictions and probabilities.
+This **AI-powered web app** allows users to **drag and drop an image of a car** to automatically detect and classify vehicle damage.
 
----
+🛠 **Built with:** `Streamlit` | `PyTorch` | `ResNet50` | `Computer Vision`  
 
-## 🚀 Features
-- Predicts the likelihood of **diabetes** using user input.
-- **Interactive form** for easy data entry.
-- Displays **prediction results** and **probabilities** in real-time.
-- **Imputed missing values** for robust predictions.
+🔍 **Model detects damage based on the third-quarter front and rear views of a car** for accurate classification.
 
 ---
 
-## 🛠️ Tech Stack
-- **Python**
-- **Streamlit** – Web App Framework
-- **Pandas** – Data Handling
-- **Scikit-learn** – Machine Learning Model
+## 📌 Features
+
+✅ **Drag & Drop Image Upload**  
+✅ **Instant AI-Powered Damage Classification**  
+✅ **6 Damage Categories**  
+✅ **User-Friendly Web Interface**  
 
 ---
 
-## 📊 Dataset Information
-The dataset used for this project contains health indicators like:
+## 🖥️ Demo
 
-- **Age**
-- **Gender**
-- **Hypertension**
-- **Heart Disease**
-- **Smoking History**
-- **BMI** (Body Mass Index)
-- **HbA1c Level** (Hemoglobin A1c)
-- **Blood Glucose Level**
-
-Each entry is labeled with a target variable indicating whether the individual has **diabetes (1)** or **does not (0)**.
+🎥 **[Watch the Demo on YouTube](https://youtu.be/gYjGngnLAHg)**  
 
 ---
 
-## 🎨 How to Use
-1. **Enter the details** in the form, such as age, gender, BMI, etc.
-2. **Click the "Predict" button** to get the prediction.
-3. View the **prediction result** and **probability score** for the input data.
+## 🎯 Model Details
+
+- **Architecture:** Transfer learning with **ResNet50**
+- **Dataset:** 2300 labeled images
+- **Training Details:**
+  - **Target Classes:**
+    1. 🟢 **Front Normal**
+    2. 🔴 **Front Crushed**
+    3. 🟡 **Front Breakage**
+    4. 🟢 **Rear Normal**
+    5. 🔴 **Rear Crushed**
+    6. 🟡 **Rear Breakage**
+  - **Validation Accuracy:** ~80%
+
+---
+
+## 🛠 Setup Instructions
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-username/vehicle-damage-detection.git
+   cd vehicle-damage-detection
